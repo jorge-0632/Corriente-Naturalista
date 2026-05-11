@@ -1,0 +1,537 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --verde:#00c853;
+    --verde2:#64dd17;
+    --oscuro:#07140c;
+    --glass:rgba(255,255,255,0.08);
+    --borde:rgba(255,255,255,0.15);
+    --sombra:0 15px 40px rgba(0,0,0,0.35);
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--oscuro);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================================================
+SCROLL
+========================================================= */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(var(--verde),var(--verde2));
+    border-radius:20px;
+}
+
+/* =========================================================
+FONDO ANIMADO
+========================================================= */
+body::before{
+    content:'';
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,var(--verde),transparent 70%);
+    top:-200px;
+    left:-200px;
+    opacity:0.15;
+    z-index:-1;
+    animation:mover 10s infinite alternate;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,var(--verde2),transparent 70%);
+    bottom:-200px;
+    right:-150px;
+    opacity:0.15;
+    z-index:-1;
+    animation:mover2 12s infinite alternate;
+}
+
+/* =========================================================
+HERO
+========================================================= */
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('../imagenes/banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:60px;
+    border-radius:35px;
+    max-width:950px;
+    box-shadow:var(--sombra);
+    animation:entrada 1.5s ease;
+}
+
+.overlay h1{
+    font-size:85px;
+    margin-bottom:20px;
+
+    background:linear-gradient(to right,#fff,var(--verde2));
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.overlay h2{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.overlay p{
+    font-size:24px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* =========================================================
+BOTÓN
+========================================================= */
+.btn{
+    display:inline-block;
+    padding:20px 50px;
+    border-radius:60px;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    background:linear-gradient(45deg,var(--verde),var(--verde2));
+    box-shadow:0 10px 30px rgba(0,200,83,0.4);
+    transition:0.5s;
+}
+
+.btn:hover{
+    transform:translateY(-8px) scale(1.05);
+}
+
+/* =========================================================
+SECCIONES
+========================================================= */
+.contenedor,
+.cards,
+.actividades,
+.frase,
+.video-section{
+    width:90%;
+    margin:auto;
+    margin-top:120px;
+    margin-bottom:120px;
+}
+
+.contenedor{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.reversa{
+    flex-direction:row-reverse;
+}
+
+/* =========================================================
+CAJAS
+========================================================= */
+.texto,
+.card,
+.actividad{
+    background:var(--glass);
+    backdrop-filter:blur(12px);
+    border:1px solid var(--borde);
+    border-radius:35px;
+    box-shadow:var(--sombra);
+}
+
+.texto{
+    flex:1;
+    padding:50px;
+}
+
+/* =========================================================
+TÍTULOS
+========================================================= */
+.texto h2,
+.cards h2,
+.actividades h2,
+.video-texto h2{
+    font-size:52px;
+    margin-bottom:30px;
+
+    background:linear-gradient(to right,#fff,var(--verde2));
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* =========================================================
+TEXTOS
+========================================================= */
+.texto p,
+.texto li{
+    font-size:20px;
+    line-height:2;
+    color:#f1f1f1;
+}
+
+.texto-justificado{
+    text-align:justify;
+}
+
+.texto ul{
+    padding-left:20px;
+}
+
+.texto li{
+    margin-bottom:15px;
+}
+
+/* =========================================================
+IMÁGENES
+========================================================= */
+.imagen{
+    flex:1;
+    overflow:hidden;
+    border-radius:35px;
+    position:relative;
+}
+
+.imagen img{
+    width:100%;
+    border-radius:35px;
+    box-shadow:var(--sombra);
+    transition:0.7s;
+    display:block;
+}
+
+.imagen img:hover{
+    transform:scale(1.08);
+}
+
+/* EFECTO BRILLO */
+.imagen::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.15),
+        transparent
+    );
+    top:0;
+    left:-100%;
+    transition:0.8s;
+    z-index:2;
+}
+
+.imagen:hover::before{
+    left:100%;
+}
+
+/* =========================================================
+CARDS
+========================================================= */
+.cards h2,
+.actividades h2{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.grid,
+.actividad-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card,
+.actividad{
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.card:hover,
+.actividad:hover{
+    transform:translateY(-15px) scale(1.03);
+}
+
+.card img,
+.actividad img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card p,
+.actividad h3{
+    padding:30px;
+    font-size:20px;
+}
+
+/* =========================================================
+FRASE
+========================================================= */
+.frase{
+    text-align:center;
+    padding:80px;
+    border-radius:35px;
+    background:linear-gradient(135deg,#00c853,#1de9b6);
+    box-shadow:0 20px 40px rgba(0,200,83,0.35);
+}
+
+.frase h2{
+    font-size:55px;
+    line-height:1.5;
+}
+
+/* =========================================================
+VIDEO SECTION
+========================================================= */
+.video-section{
+    position:relative;
+
+    background:rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:40px;
+
+    padding:70px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
+
+.video-section::before{
+    content:'';
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:radial-gradient(circle,#00c853,transparent 70%);
+
+    top:-120px;
+    left:-120px;
+
+    opacity:0.2;
+
+    filter:blur(50px);
+}
+
+.video-section::after{
+    content:'';
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    background:radial-gradient(circle,#64dd17,transparent 70%);
+
+    bottom:-120px;
+    right:-120px;
+
+    opacity:0.2;
+
+    filter:blur(50px);
+}
+
+.video-contenedor{
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.video-texto{
+    flex:1;
+}
+
+.video-wrapper{
+    flex:1;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    position:relative;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+
+    transition:0.5s;
+}
+
+.video-wrapper:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.video-wrapper::before{
+    content:'';
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+
+    top:0;
+    left:-100%;
+
+    transition:0.8s;
+
+    z-index:2;
+}
+
+.video-wrapper:hover::before{
+    left:100%;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    height:420px;
+
+    border:none;
+
+    display:block;
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+footer{
+    background:#020a05;
+    padding:60px;
+    text-align:center;
+    color:#aaa;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+/* =========================================================
+ANIMACIONES
+========================================================= */
+@keyframes entrada{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes mover{
+    from{
+        transform:translateX(0) translateY(0);
+    }
+
+    to{
+        transform:translateX(100px) translateY(50px);
+    }
+}
+
+@keyframes mover2{
+    from{
+        transform:translateX(0) translateY(0);
+    }
+
+    to{
+        transform:translateX(-100px) translateY(-50px);
+    }
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+@media(max-width:950px){
+
+    .contenedor,
+    .reversa,
+    .video-contenedor{
+        flex-direction:column;
+    }
+
+    .overlay{
+        padding:35px;
+    }
+
+    .overlay h1{
+        font-size:50px;
+    }
+
+    .overlay h2{
+        font-size:28px;
+    }
+
+    .texto h2,
+    .cards h2,
+    .actividades h2,
+    .video-texto h2{
+        font-size:38px;
+    }
+
+    .frase h2{
+        font-size:35px;
+    }
+
+    .video-wrapper iframe{
+        height:300px;
+    }
+
+    .video-section{
+        padding:40px;
+    }
+
+}

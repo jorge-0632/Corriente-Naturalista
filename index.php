@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Corriente Naturalista</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+<!-- =========================================================
+HERO
+========================================================= -->
+<header class="hero">
+
+    <div class="overlay">
+
+        <h1>CORRIENTE NATURALISTA</h1>
+
+        <h2>
+            Educación Ambiental basada en la conexión con la naturaleza
+        </h2>
+        <a href="#contenido" class="btn">
+            Explorar
+        </a>
+
+    </div>
+
+</header>
+
+<!-- =========================================================
+CONTENIDO
+========================================================= -->
+<main id="contenido">
+
+    <!-- =====================================================
+    QUÉ ES
+    ====================================================== -->
+    <section class="contenedor">
+
+        <div class="texto">
+
+            <h2><center>¿Qué es la Corriente Naturalista?</center></h2>
+
+            <p class="texto-justificado">
+                La corriente naturalista es un enfoque de la educación ambiental
+                que promueve el aprendizaje mediante la experiencia directa con
+                la naturaleza.
+            </p>
+
+            <p class="texto-justificado">
+                Busca que las personas comprendan el valor de los ecosistemas
+                mediante la observación, la exploración y el contacto con el medio ambiente.
+            </p>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="imagenes/naturaleza1.jpg" alt="Naturaleza">
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    CARACTERÍSTICAS
+    ====================================================== -->
+    <section class="cards">
+
+        <h2>Características Principales</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <img src="imagenes/aprendizaje.jpg" alt="">
+
+                <p>
+                    Promueve el aprendizaje al aire libre y el contacto permanente con la naturaleza.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/observacion.jpg" alt="">
+
+                <p>
+                    Utiliza la observación, la exploración y la experiencia como herramientas educativas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/respeto.jpg" alt="">
+
+                <p>
+                    Fomenta valores como el respeto, el cuidado y la protección del medio ambiente.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/reciclaje.jpg" alt="">
+
+                <p>
+                    Desarrolla conciencia ecológica y responsabilidad ambiental en las personas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    ENFOQUE
+    ====================================================== -->
+    <section class="contenedor reversa">
+
+        <div class="imagen">
+
+            <img src="imagenes/enfoque.jpg" alt="Enfoque Naturalista">
+
+        </div>
+
+        <div class="texto">
+
+            <h2>Enfoque de la Corriente Naturalista</h2>
+
+            <ul>
+                <li>Contacto directo con la naturaleza.</li>
+                <li>Observación de plantas, animales y ecosistemas.</li>
+                <li>Aprendizaje mediante experiencias al aire libre.</li>
+                <li>Respeto y cuidado del medio ambiente.</li>
+                <li>Desarrollo de valores ecológicos.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    OBJETIVO
+    ====================================================== -->
+    <section class="contenedor ">
+
+        <div class="imagen">
+
+            <img src="imagenes/objetivo.jpg" alt="Objetivo Ambiental">
+
+        </div>
+
+        <div class="texto">
+
+            <h2><center>Objetivo</center></h2>
+
+            <p class="texto-justificado">
+                Formar ciudadanos conscientes, responsables y comprometidos con la
+                protección del medio ambiente mediante experiencias educativas que
+                fortalezcan la relación entre el ser humano y la naturaleza.
+            </p>
+
+            <ul>
+                <li>Fomentar la conciencia ambiental.</li>
+                <li>Promover el respeto por los ecosistemas.</li>
+                <li>Desarrollar hábitos sostenibles.</li>
+                <li>Fortalecer la conexión con la naturaleza.</li>
+                <li>Impulsar la conservación ambiental.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    IMPORTANCIA
+    ====================================================== -->
+    <section class="cards">
+
+        <h2>Importancia en la Educación Ambiental</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <img src="imagenes/importancia1.jpg" alt="">
+
+                <p>
+                    Permite comprender la relación entre las actividades humanas y el equilibrio de los ecosistemas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/importancia2.jpg" alt="">
+
+                <p>
+                    Fortalece la conciencia ambiental desde edades tempranas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/importancia3.jpg" alt="">
+
+                <p>
+                    Promueve prácticas responsables para el cuidado de los recursos naturales.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="imagenes/importancia4.jpg" alt="">
+
+                <p>
+                    Inspira acciones de conservación y protección del planeta.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    ACTIVIDADES
+    ====================================================== -->
+    <section class="actividades">
+
+        <h2>Actividades Naturalistas</h2>
+
+        <div class="actividad-grid">
+
+            <div class="actividad">
+
+                <img src="imagenes/huerta.jpg" alt="">
+
+                <h3>Huertas Escolares</h3>
+
+            </div>
+
+            <div class="actividad">
+
+                <img src="imagenes/aves.jpg" alt="">
+
+                <h3>Observación de Flora y Fauna</h3>
+
+            </div>
+
+            <div class="actividad">
+
+                <img src="imagenes/reforestacion.jpg" alt="">
+
+                <h3>Jornadas de Reforestación</h3>
+
+            </div>
+
+            <div class="actividad">
+
+                <img src="imagenes/limpieza.jpg" alt="">
+
+                <h3>Limpieza de Espacios Naturales</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    APLICACIÓN
+    ====================================================== -->
+    <section class="contenedor">
+
+        <div class="texto">
+
+            <h2>¿Cómo se aplica?</h2>
+
+            <ul>
+                <li>Clases y recorridos ecológicos al aire libre.</li>
+                <li>Visitas a parques naturales y reservas ambientales.</li>
+                <li>Proyectos de reciclaje y conservación.</li>
+                <li>Actividades de observación y exploración ambiental.</li>
+                <li>Campañas de sensibilización ecológica.</li>
+            </ul>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="imagenes/aplicacion.jpg" alt="Aplicación">
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+    FRASE FINAL
+    ====================================================== -->
+    <section class="frase">
+        <div>
+        <h2>“La naturaleza no es un lugar para visitar, es nuestro hogar y nuestra responsabilidad protegerla.”</h2>
+        </div>
+        
+
+    </section>
+    
+ 
+
+        
+        <!-- =========================================================
+SECCIÓN VIDEO
+========================================================= -->
+<section class="video-section">
+
+    <div class="video-contenedor">
+
+        <!-- TEXTO -->
+        <div class="video-texto">
+
+            <h2>
+                Video Educativo
+            </h2>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="video-wrapper">
+
+            <iframe
+                src="https://www.youtube.com/embed/dOpLT-cDhq0?si=tkuYiN_omAQUyQjr"
+                title="Video Educativo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+    </div
+
+</section>
+
+</main>
+
+<!-- =========================================================
+FOOTER
+========================================================= -->
+<footer>
+
+    <h3>Referencias</h3>
+
+    <p>
+        Sauvé, L. (2004). Perspectivas curriculares para la formación ambiental. UNESCO.
+    </p>
+
+    <p>
+        UNESCO. (1977). Conferencia Intergubernamental sobre Educación Ambiental.
+    </p>
+
+    <p>
+        Novo, M. (2009). La educación ambiental: bases éticas y pedagógicas. Universitas.
+    </p>
+
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
