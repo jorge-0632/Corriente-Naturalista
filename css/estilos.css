@@ -524,6 +524,10 @@ RESPONSIVE
         font-size:38px;
     }
 
+    .frase{
+        padding:60px;
+    }
+
     .frase h2{
         font-size:35px;
     }
@@ -557,6 +561,10 @@ RESPONSIVE
     .actividades h2,
     .video-texto h2{
         font-size:32px;
+    }
+
+    .frase{
+        padding:40px 20px;
     }
 
     .frase h2{
@@ -617,8 +625,13 @@ RESPONSIVE
         font-size:28px;
     }
 
+    .frase{
+        padding:30px 15px;
+    }
+
     .frase h2{
-        font-size:24px;
+        font-size:20px;
+        line-height:1.4;
     }
 
     .texto{
