@@ -98,6 +98,7 @@ HERO
 
     background:linear-gradient(to right,#fff,var(--verde2));
 
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -186,6 +187,7 @@ TÍTULOS
 
     background:linear-gradient(to right,#fff,var(--verde2));
 
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -532,6 +534,128 @@ RESPONSIVE
 
     .video-section{
         padding:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .overlay{
+        padding:25px;
+    }
+
+    .overlay h1{
+        font-size:40px;
+    }
+
+    .overlay h2{
+        font-size:24px;
+    }
+
+    .texto h2,
+    .cards h2,
+    .actividades h2,
+    .video-texto h2{
+        font-size:32px;
+    }
+
+    .frase h2{
+        font-size:28px;
+    }
+
+    .texto{
+        padding:40px 20px;
+    }
+
+    .card img,
+    .actividad img{
+        height:200px;
+    }
+
+    .grid,
+    .actividad-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .video-wrapper iframe{
+        height:250px;
+    }
+
+    .video-section{
+        padding:30px 20px;
+    }
+
+    .contacto{
+        margin:80px 20px;
+    }
+
+    .contact-form{
+        padding:40px 20px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .overlay{
+        padding:20px;
+    }
+
+    .overlay h1{
+        font-size:32px;
+    }
+
+    .overlay h2{
+        font-size:20px;
+    }
+
+    .texto h2,
+    .cards h2,
+    .actividades h2,
+    .video-texto h2{
+        font-size:28px;
+    }
+
+    .frase h2{
+        font-size:24px;
+    }
+
+    .texto{
+        padding:30px 15px;
+    }
+
+    .card img,
+    .actividad img{
+        height:150px;
+    }
+
+    .card p,
+    .actividad h3{
+        padding:20px;
+        font-size:18px;
+    }
+
+    .video-wrapper iframe{
+        height:200px;
+    }
+
+    .video-section{
+        padding:20px 15px;
+    }
+
+    .contacto{
+        margin:60px 15px;
+    }
+
+    .contact-form{
+        padding:30px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        padding:12px;
+        font-size:14px;
     }
 
 }
